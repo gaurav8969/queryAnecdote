@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "vitest-globals/env": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:vitest-globals/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@stylistic/js"
+  ],
+  "rules": {
+    "@stylistic/js/indent": [
+      "error",
+      2,
+      { "SwitchCase": 1 }
+    ],
+    "@stylistic/js/linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "@stylistic/js/quotes": [
+      "error",
+      "single"
+    ],
+    "@stylistic/js/semi": [
+      "error",
+      "always"
+    ],
+    "eqeqeq": "error",
+    "no-trailing-spaces": "error",
+    "object-curly-spacing": [
+      "error", "always"
+    ],
+    "arrow-spacing": [
+      "error", { "before": true, "after": true }
+    ],
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "react/prop-types":"off",
+    "react/no-unused-state": 1,
+    "react/react-in-jsx-scope": 0,
+    "react-hooks/exhaustive-deps": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "no-constant-condition": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
